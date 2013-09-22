@@ -3,10 +3,6 @@ SDAT-2013
 
 UTEP Software 2 Repository
 
-X: Edit
-
-Funk that
-
-More testing to see something.
-
-Yeah cheak
+Database Info 
+Username-Password firstname  Example: username:"juan"  password:"juan"
+Address: 67.10.204.101:3306
