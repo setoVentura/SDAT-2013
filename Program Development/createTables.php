@@ -38,8 +38,8 @@ echo "User table created successfully\n";
 echo "</br>";
 
 $sql = "CREATE TABLE IF NOT EXISTS tbl_rules( ".
-       "id VARCHAR(255), ".
-       "start VARCHAR(255) NOT NULL, ".
+       "id VARCHAR(255) NOT NULL,".
+       "start VARCHAR(255), ".
        "end VARCHAR(255), ".
        "discipline VARCHAR(255), ".
 	   "owner VARCHAR(255), ".
@@ -58,7 +58,7 @@ echo "Rules table created successfully\n";
 echo "</br>";
 
 $sql = "CREATE TABLE IF NOT EXISTS tbl_monitor( ".
-       "id VARCHAR(255), ".
+       "id VARCHAR(255) NOT NULL,".
 	   "users VARCHAR(255), ".
        "private int, ".
 	   "PRIMARY KEY (id)); ";
