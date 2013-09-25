@@ -1,0 +1,252 @@
+2013/09/25 07:05:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php:157
+Stack trace:
+#0 C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php(55): RulesController->loadModel('123')
+#1 [internal function]: RulesController->actionView('123')
+#2 C:\xampp\htdocs\senqual\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(RulesController), Array)
+#3 C:\xampp\htdocs\senqual\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(RulesController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\senqual\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\senqual\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\senqual\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\senqual\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\senqual\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\senqual\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(141): CWebApplication->runController('rules/view')
+#14 C:\xampp\htdocs\senqual\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\senqual\senqual\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/senqual/senqual/index.php?r=rules/view&id=123
+HTTP_REFERER=http://localhost/senqual/senqual/index.php?r=rules/create
+---
+2013/09/25 07:13:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "create".' in C:\xampp\htdocs\senqual\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(141): CWebApplication->runController('create')
+#1 C:\xampp\htdocs\senqual\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\senqual\senqual\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/senqual/senqual/index.php?r=create
+---
+2013/09/25 07:14:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "git".' in C:\xampp\htdocs\senqual\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(141): CWebApplication->runController('git')
+#1 C:\xampp\htdocs\senqual\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\senqual\senqual\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/senqual/senqual/index.php?r=git
+---
+2013/09/25 07:15:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php:157
+Stack trace:
+#0 C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php(55): RulesController->loadModel('Juan')
+#1 [internal function]: RulesController->actionView('Juan')
+#2 C:\xampp\htdocs\senqual\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(RulesController), Array)
+#3 C:\xampp\htdocs\senqual\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(RulesController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\senqual\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\senqual\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\senqual\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\senqual\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\senqual\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\senqual\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(141): CWebApplication->runController('rules/view')
+#14 C:\xampp\htdocs\senqual\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\senqual\senqual\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/senqual/senqual/index.php?r=rules/view&id=Juan
+HTTP_REFERER=http://localhost/senqual/senqual/index.php?r=rules/create
+---
+2013/09/25 07:17:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Here is The requested page does not exist.' in C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php:157
+Stack trace:
+#0 C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php(55): RulesController->loadModel('Juan')
+#1 [internal function]: RulesController->actionView('Juan')
+#2 C:\xampp\htdocs\senqual\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(RulesController), Array)
+#3 C:\xampp\htdocs\senqual\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(RulesController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\senqual\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\senqual\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\senqual\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\senqual\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\senqual\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\senqual\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(141): CWebApplication->runController('rules/view')
+#14 C:\xampp\htdocs\senqual\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\senqual\senqual\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/senqual/senqual/index.php?r=rules/view&id=Juan
+HTTP_REFERER=http://localhost/senqual/senqual/index.php?r=rules/create
+---
+2013/09/25 07:37:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Here is The requested page does not exist.' in C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php:157
+Stack trace:
+#0 C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php(55): RulesController->loadModel('1')
+#1 [internal function]: RulesController->actionView('1')
+#2 C:\xampp\htdocs\senqual\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(RulesController), Array)
+#3 C:\xampp\htdocs\senqual\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(RulesController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\senqual\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\senqual\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\senqual\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\senqual\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\senqual\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\senqual\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(141): CWebApplication->runController('rules/view')
+#14 C:\xampp\htdocs\senqual\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\senqual\senqual\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/senqual/senqual/index.php?r=rules/view&id=1
+HTTP_REFERER=http://localhost/senqual/senqual/index.php?r=rules/create
+---
+2013/09/25 07:40:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php:157
+Stack trace:
+#0 C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php(55): RulesController->loadModel('2')
+#1 [internal function]: RulesController->actionView('2')
+#2 C:\xampp\htdocs\senqual\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(RulesController), Array)
+#3 C:\xampp\htdocs\senqual\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(RulesController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\senqual\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\senqual\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\senqual\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\senqual\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\senqual\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\senqual\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(141): CWebApplication->runController('rules/view')
+#14 C:\xampp\htdocs\senqual\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\senqual\senqual\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/senqual/senqual/index.php?r=rules/view&id=2
+HTTP_REFERER=http://localhost/senqual/senqual/index.php?r=rules/create
+---
+2013/09/25 07:45:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php:157
+Stack trace:
+#0 C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php(55): RulesController->loadModel('2')
+#1 [internal function]: RulesController->actionView('2')
+#2 C:\xampp\htdocs\senqual\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(RulesController), Array)
+#3 C:\xampp\htdocs\senqual\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(RulesController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\senqual\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\senqual\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\senqual\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\senqual\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\senqual\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\senqual\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(141): CWebApplication->runController('rules/view')
+#14 C:\xampp\htdocs\senqual\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\senqual\senqual\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/senqual/senqual/index.php?r=rules/view&id=2
+HTTP_REFERER=http://localhost/senqual/senqual/index.php?r=rules/create
+---
+2013/09/25 07:47:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php:157
+Stack trace:
+#0 C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php(55): RulesController->loadModel('2')
+#1 [internal function]: RulesController->actionView('2')
+#2 C:\xampp\htdocs\senqual\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(RulesController), Array)
+#3 C:\xampp\htdocs\senqual\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(RulesController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\senqual\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\senqual\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\senqual\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\senqual\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\senqual\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\senqual\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(141): CWebApplication->runController('rules/view')
+#14 C:\xampp\htdocs\senqual\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\senqual\senqual\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/senqual/senqual/index.php?r=rules/view&id=2
+HTTP_REFERER=http://localhost/senqual/senqual/index.php?r=rules/create
+---
+2013/09/25 07:58:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php:157
+Stack trace:
+#0 C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php(55): RulesController->loadModel('2')
+#1 [internal function]: RulesController->actionView('2')
+#2 C:\xampp\htdocs\senqual\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(RulesController), Array)
+#3 C:\xampp\htdocs\senqual\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(RulesController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\senqual\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\senqual\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\senqual\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\senqual\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\senqual\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\senqual\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(141): CWebApplication->runController('rules/view')
+#14 C:\xampp\htdocs\senqual\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\senqual\senqual\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/senqual/senqual/index.php?r=rules/view&id=2
+HTTP_REFERER=http://localhost/senqual/senqual/index.php?r=rules/create
+---
+2013/09/25 08:00:03 [error] [php] Undefined variable: id (C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php:74)
+Stack trace:
+#0 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(133): RulesController->runAction()
+#1 C:\xampp\htdocs\senqual\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\senqual\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\senqual\framework\web\filters\CInlineFilter.php(58): RulesController->filterAccessControl()
+#4 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\senqual\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\senqual\framework\web\CController.php(265): RulesController->runActionWithFilters()
+#7 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(282): RulesController->run()
+#8 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\senqual\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\senqual\senqual\index.php(13): CWebApplication->run()
+REQUEST_URI=/senqual/senqual/index.php?r=rules/create
+in C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php (74)
+in C:\xampp\htdocs\senqual\senqual\index.php (13)
+2013/09/25 08:03:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php:157
+Stack trace:
+#0 C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php(55): RulesController->loadModel('2')
+#1 [internal function]: RulesController->actionView('2')
+#2 C:\xampp\htdocs\senqual\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(RulesController), Array)
+#3 C:\xampp\htdocs\senqual\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(RulesController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\senqual\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\senqual\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\senqual\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\senqual\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\senqual\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\senqual\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(141): CWebApplication->runController('rules/view')
+#14 C:\xampp\htdocs\senqual\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\senqual\senqual\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/senqual/senqual/index.php?r=rules/view&id=2
+HTTP_REFERER=http://localhost/senqual/senqual/index.php?r=rules/create
+---
+2013/09/25 08:04:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php:157
+Stack trace:
+#0 C:\xampp\htdocs\senqual\senqual\protected\controllers\RulesController.php(55): RulesController->loadModel('4')
+#1 [internal function]: RulesController->actionView('4')
+#2 C:\xampp\htdocs\senqual\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(RulesController), Array)
+#3 C:\xampp\htdocs\senqual\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(RulesController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\senqual\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\senqual\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\senqual\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\senqual\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\senqual\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\senqual\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\senqual\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\senqual\framework\web\CWebApplication.php(141): CWebApplication->runController('rules/view')
+#14 C:\xampp\htdocs\senqual\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\senqual\senqual\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/senqual/senqual/index.php?r=rules/view&id=4
+HTTP_REFERER=http://localhost/senqual/senqual/index.php?r=rules/create
+---
