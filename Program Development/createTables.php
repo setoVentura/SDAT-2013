@@ -39,12 +39,12 @@ echo "</br>";
 
 $sql = "CREATE TABLE IF NOT EXISTS tbl_rules( ".
        "id VARCHAR(255) NOT NULL,".
-       "start VARCHAR(255), ".
-       "end VARCHAR(255), ".
+       "starts VARCHAR(255), ".
+       "ends VARCHAR(255), ".
        "discipline VARCHAR(255), ".
 	   "owner VARCHAR(255), ".
 	   "property VARCHAR(255), ".
-	   "private int, ".
+	   "isPrivate int, ".
 	   "PRIMARY KEY (id)); ";
 mysql_select_db( 'senqual' );
 $retval = mysql_query( $sql, $conn );
@@ -60,7 +60,7 @@ echo "</br>";
 $sql = "CREATE TABLE IF NOT EXISTS tbl_monitor( ".
        "id VARCHAR(255) NOT NULL,".
 	   "users VARCHAR(255), ".
-       "private int, ".
+       "isPrivate int, ".
 	   "PRIMARY KEY (id)); ";
 mysql_select_db( 'senqual' );
 $retval = mysql_query( $sql, $conn );
