@@ -221,7 +221,9 @@ textarea {
   }
 }
 
-body {
+body 
+{
+  padding top 40px:   
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -6118,7 +6120,7 @@ a.badge:focus {
 }
 
 .hero-unit {
-  padding: 60px;
+  padding: 45px;
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: 200;
@@ -6132,7 +6134,7 @@ a.badge:focus {
 
 .hero-unit h1 {
   margin-bottom: 0;
-  font-size: 60px;
+  font-size: 45px;
   line-height: 1;
   letter-spacing: -1px;
   color: inherit;
