@@ -6,66 +6,11 @@
 		<meta charset="US-ASCII">
 		<title>Insert title here</title>
 	</head>
-	<body>	
-	<script type="text/javascript" src="Getters.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script type="text/javascript">		
+	<body>
+	<script type="text/javascript">
 	function comingSoon()
 	{
 		alert("Page under construction, functionality coming soon.");
-	}
-	function profile()
-	{
-		var usr=new UserProfile();
-		document.getElementById("fName").value=usr.getFName();
-		document.getElementById("lName").value=usr.getLName();
-		document.getElementById("title").value=usr.getTitle();
-		document.getElementById("affil").value=usr.getAffiliation();
-		document.getElementById("email").value=usr.getEmail();
-		document.getElementById("password").value=usr.getPassword();
-		document.getElementById("phone").value=usr.getPhone();
-		document.getElementById("notificationTypeList").value=usr.getType();
-		document.getElementById("notificationFrequency").value=usr.getFrequency();
-	}
-	function update()
-	{
-		var usr=new UserProfile();
-		if(document.getElementById("fName").value!=usr.getFName())
-		{
-			usr.setFName(document.getElementById("fName"));
-		}
-		if(document.getElementById("lName").value!=usr.getLName())
-		{
-			usr.setLName(document.getElementById("lName"));
-		}
-		if(document.getElementById("title").value!=usr.getTitle())
-		{
-			usr.setTitle(document.getElementById("title"));
-		}
-		if(document.getElementById("affil").value!=usr.getAffiliation())
-		{
-			usr.setAffiliation(document.getElementById("affil"));
-		}
-		if(document.getElementById("email").value!=usr.getEmail())
-		{
-			usr.setEmail(document.getElementById("email"));
-		}
-		if(document.getElementById("password").value!=usr.getPassword())
-		{
-			usr.setPassword(document.getElementById("password"));
-		}
-		if(document.getElementById("phone").value!=usr.getPhone())
-		{
-			usr.setPhone(document.getElementById("phone"));
-		}
-		if(document.getElementById("notificationTypeList").value!=usr.getType())
-		{
-			usr.setType(document.getElementById("notificationTypeList"));
-		}
-		if(document.getElementById("notificationFrequency").value!=usr.getFrequency())
-		{
-			usr.setFrequency(document.getElementById("notificationFrequency"));
-		}
 	}
 	</script>
 		<div id="navbar">
@@ -75,18 +20,19 @@
 				<li onclick="comingSoon()">Monitor</li>
 				<li onclick="comingSoon()">Rules</li>
 				<li onclick="comingSoon()">Sensors</li>
-				<li onclick="profile()">Profile</li>
+				<li>Profile</li>
 			</ul>
 		</div>
 		<br/>
 		<br/>
-			<label for="firstname">First Name: </label>		<input type="text" id="fName">
-			<label for="lasname">Last Name: </label>		<input type="text" id="lName">
-			<label for="title">Title: </label>				<input type="text" id="title"><br/>
-			<label for="affiliation">Affiliation: </label>	<input type="text" id="affil">
-			<label for="email">Email: </label>				<input type="text" id="email">
-			<label for="password">Password: </label>		<input type="password" id="password"><br/>
-			<label for="phone">(Optional)Phone: </label>	<input type="text" id="phone">
+		<form>
+			<label for="firstname">First Name: </label>		<input type="text" name="fName">
+			<label for="lasname">Last Name: </label>		<input type="text" name="lName">
+			<label for="title">Title: </label>				<input type="text" name="title"><br/>
+			<label for="affiliation">Affiliation: </label>	<input type="text" name="affil">
+			<label for="email">Email: </label>				<input type="text" name="email">
+			<label for="password">Password: </label>		<input type="password" name="password"><br/>
+			<label for="phone">(Optional)Phone: </label>	<input type="text" name="phone">
 			<label for="notifType">Notification Type</label>
 			<select id="notificationTypeList">
 				<option value="1">Select Notification</option>
@@ -101,6 +47,6 @@
                <option value = "3">Once for each rule violated</option>
                <option value = "4">Once per monitor</option>
 			</select><br/>
-			<button onclick="update()">Save</button>
+		</form>
 	</body>
 </html>
