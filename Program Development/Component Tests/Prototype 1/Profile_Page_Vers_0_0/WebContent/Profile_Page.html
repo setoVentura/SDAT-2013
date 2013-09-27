@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="Toolbar.css">
-		<link rel="alignment" type="text/css" href="Aligment.css">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
 		<meta charset="US-ASCII">
 		<title>Insert title here</title>
 	</head>
 	<body>	
-	<script type="text/javascript" src="Getters.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="Getters.js"></script>
 	<script type="text/javascript">		
 	function comingSoon()
 	{
@@ -16,91 +20,111 @@
 	}
 	function profile()
 	{
+		var x=document.getElementById("Profile");
 		var usr=new UserProfile();
-		document.getElementById("fName").value=usr.getFName();
-		document.getElementById("lName").value=usr.getLName();
-		document.getElementById("title").value=usr.getTitle();
-		document.getElementById("affil").value=usr.getAffiliation();
-		document.getElementById("email").value=usr.getEmail();
-		document.getElementById("password").value=usr.getPassword();
-		document.getElementById("phone").value=usr.getPhone();
-		document.getElementById("notificationTypeList").value=usr.getType();
-		document.getElementById("notificationFrequency").value=usr.getFrequency();
+		x.elements[0].value=usr.getFName();
+		x.elements[1].value=usr.getLName();
+		x.elements[2].value=usr.getTitle();
+		x.elements[3].value=usr.getAffiliation();
+		x.elements[4].value=usr.getEmail();
+		x.elements[5].value=usr.getPassword();
+		x.elements[6].value=usr.getPhone();
+		x.elements[7].value=usr.getType();
+		x.elements[8].value=usr.getFrequency();
 	}
 	function update()
 	{
 		var usr=new UserProfile();
-		if(document.getElementById("fName").value!=usr.getFName())
+		var x=document.getElementById("Profile");
+		if(usr.getFName()!=x.elements[0].value)
 		{
-			usr.setFName(document.getElementById("fName"));
+			usr.setFName(x.elements[0].value);
 		}
-		if(document.getElementById("lName").value!=usr.getLName())
+		if(usr.getLName()!=x.elements[1].value)
 		{
-			usr.setLName(document.getElementById("lName"));
+			usr.setLName(x.elements[1].value);
 		}
-		if(document.getElementById("title").value!=usr.getTitle())
+		if(usr.getTitle()!=x.elements[2].value)
 		{
-			usr.setTitle(document.getElementById("title"));
+			usr.setTitle(x.elements[2].value);
 		}
-		if(document.getElementById("affil").value!=usr.getAffiliation())
+		if(usr.getAffiliation()!=x.elements[3].value)
 		{
-			usr.setAffiliation(document.getElementById("affil"));
+			usr.setAffiliation(x.elements[3].value);
 		}
-		if(document.getElementById("email").value!=usr.getEmail())
+		if(usr.getEmail()!=x.elements[4].value)
 		{
-			usr.setEmail(document.getElementById("email"));
+			usr.setEmail(x.elements[4].value);
 		}
-		if(document.getElementById("password").value!=usr.getPassword())
+		if(usr.getPassword()!=x.elements[5].value)
 		{
-			usr.setPassword(document.getElementById("password"));
+			usr.setPassword(x.elements[5].value);
 		}
-		if(document.getElementById("phone").value!=usr.getPhone())
+		if(usr.getPhone()!=x.elements[6].value)
 		{
-			usr.setPhone(document.getElementById("phone"));
+			usr.setPhone(x.elements[6].value);
 		}
-		if(document.getElementById("notificationTypeList").value!=usr.getType())
+		if(usr.getType()!=x.elements[7].value)
 		{
-			usr.setType(document.getElementById("notificationTypeList"));
+			usr.setType(x.elements[7].value);
 		}
-		if(document.getElementById("notificationFrequency").value!=usr.getFrequency())
+		if(usr.getFrequency()!=x.elements[8].value)
 		{
-			usr.setFrequency(document.getElementById("notificationFrequency"));
+			usr.setFrequency(x.elements[8].value);
 		}
+		x.elements[0].value=usr.getFName();
+		x.elements[1].value=usr.getLName();
+		x.elements[2].value=usr.getTitle();
+		x.elements[3].value=usr.getAffiliation();
+		x.elements[4].value=usr.getEmail();
+		x.elements[5].value=usr.getPassword();
+		x.elements[6].value=usr.getPhone();
+		x.elements[7].value=usr.getType();
+		x.elements[8].value=usr.getFrequency();
 	}
 	</script>
-		<div id="navbar">
-			<ul>
-				<li onclick="comingSoon()">Home</li>
-				<li onclick="comingSoon()">Dashboard</li>
-				<li onclick="comingSoon()">Monitor</li>
-				<li onclick="comingSoon()">Rules</li>
-				<li onclick="comingSoon()">Sensors</li>
-				<li onclick="profile()">Profile</li>
-			</ul>
-		</div>
+		<div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+                    class="icon-th-list"></span></a><a href="#" class="brand">Team Four</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav pull-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Monitor</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                        <li><a href="#">Sensors</a></li>
+                        <li onclick="profile()"><a href="#">Profile</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 		<br/>
 		<br/>
-			<label for="firstname">First Name: </label>		<input type="text" id="fName">
-			<label for="lasname">Last Name: </label>		<input type="text" id="lName">
-			<label for="title">Title: </label>				<input type="text" id="title"><br/>
-			<label for="affiliation">Affiliation: </label>	<input type="text" id="affil">
-			<label for="email">Email: </label>				<input type="text" id="email">
-			<label for="password">Password: </label>		<input type="password" id="password"><br/>
-			<label for="phone">(Optional)Phone: </label>	<input type="text" id="phone">
-			<label for="notifType">Notification Type</label>
-			<select id="notificationTypeList">
+		<form id="Profile">
+			First Name: <input type="text" id="fName">
+			Last Name: <input type="text" id="lName">
+			Title: <input type="text" id="title"><br/>
+			Affiliation: <input type="text" id="affil">
+			Email: <input type="text" id="email">
+			Password: <input type="password" id="password"><br/>
+			Phone: <input type="text" id="phone">
+			Notification Type: <select id="notificationTypeList">
 				<option value="1">Select Notification</option>
 				<option value="2">Text</option>
                 <option value="3">Email</option>
                 <option value="4">None</option>
 			</select><br/>
-			<label for="notifFreq">Notification Frequency</label>
+			Notification Frequency:
 			<select id="notificationFrequency">
 			   <option value = "1">Select Frequency</option>
 			   <option value = "2">Each Anomaly Detected</option>
                <option value = "3">Once for each rule violated</option>
                <option value = "4">Once per monitor</option>
 			</select><br/>
-			<button onclick="update()">Save</button>
+			<button onclick="update()">Save</button> 
+		</form>
 	</body>
 </html>
