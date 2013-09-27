@@ -1,6 +1,7 @@
 <?php
 /* @var $this RuleController */
 /* @var $model Rule */
+Yii::app()->bootstrap->register();
 
 $this->breadcrumbs=array(
 	'Rules'=>array('index'),
